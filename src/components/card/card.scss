@@ -1,0 +1,80 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: flex-start;
+	&__block {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+	}
+	p {
+		color: #3b4157;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	&__buttons {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+	}
+}
+.cardPopup {
+	top: 201px;
+	right: 605px;
+	position: fixed;
+	width: 421px;
+
+	border-radius: 4px;
+	border: 1px solid var(--bg_dark, #e3e3e3);
+	background: #fff;
+	box-shadow: 0px 16px 32px 0px rgba(35, 39, 51, 0.1);
+	height: 250px;
+	overflow: scroll;
+	overflow-x: hidden;
+	&__inputBlock {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: flex-start;
+		margin-left: 15px;
+		input {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			display: flex;
+			flex-wrap: nowrap;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+			color: #c1c1c1;
+			font-family: Roboto;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: flex-start;
+		margin-left: 15px;
+		img {
+			margin-right: 10px;
+		}
+	}
+}
